@@ -61,7 +61,7 @@ html {
   text-decoration: none;
   color: lightgray;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  /* font-size: 15px; */
   transition: all 0.3s ease-in;
   cursor: pointer;
 }
@@ -69,6 +69,7 @@ html {
 .nav-list li a:hover {
   text-decoration: none;
   color: white;
+  animation: navlist-zoom 500ms ease-in;
 }
 .burger {
   display: none;
@@ -148,6 +149,15 @@ html {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes navlist-zoom {
+  0% {
+    font-size: 15px;
+  }
+  100% {
+    font-size: 17px;
   }
 }
 
