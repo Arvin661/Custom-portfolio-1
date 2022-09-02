@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/animation.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
     <title>Yenoke</title>
     <link
       rel="stylesheet"
@@ -115,8 +117,8 @@
         </div>
       </nav>
       <div class="firstSection">
-        <h1 class="firsth1" style="font-size: 100px">HI! I am Arvin!</h1>
-        <h2 class="firsth2">I love coding and I am a software engineer!</h2>
+        <h1 class="firsth1" style="font-size: 100px">PxL-Studios™</h1>
+        <h2 class="generalh2">Our team </h2>
         <div class="b-skills">
           <div class="conrainer">
             <h2>My skills</h2>
@@ -192,46 +194,46 @@
       <script src="Plugins/jquery.appear.min.js"></script>
       <script src="Plugins/jquery.easypiechart.min.js"></script>
       <script src="JS/resp.js"></script>
-      <script>
-        "use strict";
-
-        var $window = $(window);
-
-        function run() {
-          var fName = arguments[0],
-            aArgs = Array.prototype.slice.call(arguments, 1);
-          try {
-            fName.apply(window, aArgs);
-          } catch (err) {}
-        }
-
-        /* chart
-   ================================================== */
-        function _chart() {
-          $(".b-skills").appear(function () {
-            setTimeout(function () {
-              $(".chart").easyPieChart({
-                easing: "easeOutElastic",
-                delay: 3000,
-                barColor: "#369670",
-                trackColor: "#fff",
-                scaleColor: false,
-                lineWidth: 21,
-                trackWidth: 21,
-                size: 250,
-                lineCap: "round",
-                onStep: function (from, to, percent) {
-                  this.el.children[0].innerHTML = Math.round(percent);
-                },
-              });
-            }, 150);
-          });
-        }
-
-        $(document).ready(function () {
-          run(_chart);
-        });
-      </script>
+      <script src="JS/pie.js"></script>
+    </section>
+    <section class="projects">
+      <h2
+        class="generalh2 project-h2"
+        style="padding-top: 50px; font-size: 50px"
+      >
+        PROJECTS
+      </h1>
+      <h3 style="text-align: center;">I work as a website designer and a game developer at &#169Pxl Games</h3>
+      <!-- <div class="project-img"></div> -->
+      <br style="background-color: white;" />
+      <section class="section section-projects">
+        <style>
+          .section-projects{
+            text-align: center;
+          }
+        </style>
+      <div class="project-text">
+          <style>
+            .project-text{
+              background-color: none;
+            }
+          </style>
+          <h2 class="sectionTag text-big projects-texts pxl-games">
+            Projects of &#169Pxl Games
+          </h2>
+          <style>
+            .vl {
+              border-left: 1px solid black;
+              align-items: center;
+              margin-left: 50px;
+              margin-right: 50px;
+            }
+            </style>
+            
+            <div class="vl"></div>
+          <h2 class="sectionTag text-big projects-texts my-projects">My Projects</h2>
+      </div>
+      </section>
     </section>
   </body>
 </html>

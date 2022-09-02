@@ -1,0 +1,45 @@
+/* KEYFRAMES */
+@keyframes navbar-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes navlist-load {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+@keyframes h1-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes h2-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navlist-zoom {
+  0% {
+    font-size: 15px;
+  }
+  100% {
+    font-size: 17px;
+  }
+}
